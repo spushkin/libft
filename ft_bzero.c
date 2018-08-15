@@ -16,11 +16,13 @@
 ** If n is zero, bzero() does nothing.
 */
 
+#include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
 	char *p;
 
-	p = (char *)b;
+	p = (char *)s;
 	while (n > 0)
 	{
 		*p = 0;
