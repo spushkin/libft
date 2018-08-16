@@ -20,8 +20,29 @@
 
 int		ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	else
+		return (0);
 }
 
 
+ int main()
+ {
+	char c, result;
+
+	c = 'M';
+	result = ft_isalnum(c);
+	printf("The result is %d\n", result);
+
+	c = 'm';
+	result = ft_isalnum(c);
+	printf("The result is %d\n", result);
+
+	c = '+';
+	result = ft_isalnum(c);
+	printf("The result is %d\n", result);
+
+	return 0;
+ }
 
