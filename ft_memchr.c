@@ -10,10 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-/* 
+/*
 ** memchr -- locate byte in byte string
-** The memchr() function locates the first occurrence of c 
+** The memchr() function locates the first occurrence of c
 ** (converted to an unsigned char) in string s.
 */
 
