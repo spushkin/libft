@@ -11,28 +11,23 @@
 /* ************************************************************************** */
 
 /*
-** Applies the function f to each character of the string passed as argument.
-** Each character is passed by address to f to be modified if necessary.
-** Param. #1
-** The string to iterate.
-** Param. #2
-** The function to apply to each character of s.
-** Return value
-** None.
-** Libc functions
-** None.
+** This function is made to apply the parameter function f
+** to each character in
+** a string passed as the parameter s. Each character is
+** passed by the address
+** to the function f so that it can be modified if necessary.
 */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f)(char *))
+void		ft_striter(char *s, void (*f)(char *))
 {
-	if (s && f)
+	unsigned int	i;
+
+	i = 0;
+	while (s[i] != '\0')
 	{
-		while (*s != '\0')
-		{
-			f(s);
-			s++;
-		}
+		f(s + i);
+		i++;
 	}
 }

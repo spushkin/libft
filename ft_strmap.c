@@ -11,36 +11,27 @@
 /* ************************************************************************** */
 
 /*
-** Applies the function f to each character of the string given
-** as argument to create a “fresh” new string (with malloc(3)) 
-** resulting from the successive applications of f.
-** Param. #1
-** The string to map.
-** Param. #2
-** The function to apply to each character of s.
-** Return value
-** The “fresh” string created from the successive applications of f.
-** Libc functions
-** malloc(3)
+** This functin applies the given function f to each character of the given
+** string in order to create a new string that is the result of have function
+** f run on string s. It will return a 'fresh' copy of the modified string
 */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char		*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int	i;
-	char			*new;
+	char			*str;
 
-	if (!s || !f)
-		return (NULL);
-	new = ft_strnew(ft_strlen(s));
-	if (new == NULL)
-		return (NULL);
 	i = 0;
-	while (s[i])
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
+	if (str == NULL)
+		return (NULL);
+	while (s[i] != '\0')
 	{
-		new[i] = f(s[i]);
+		str[i] = f(s[i]);
 		i++;
 	}
-	return (new);
+	str[i] = '\0';
+	return (str);
 }

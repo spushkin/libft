@@ -11,6 +11,9 @@
 /* ************************************************************************** */
 
 /*
+** This function is exactly the same as our ft_putnbr function except that we
+** will be using our ft_putchar_fd function instead of ft_putchar beacuse we
+** will be accepting a parameter for this function that is our file descriptor.
 ** Outputs the integer n to the file descriptor fd.
 ** Param. #1 The integer to print.
 ** Param. #2 The file descriptor.

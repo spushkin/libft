@@ -11,30 +11,18 @@
 /* ************************************************************************** */
 
 /*
-** Allocates (with malloc(3)) and returns a “fresh” 
-** string end- ing with ’\0’. 
-** Each character of the string is initialized at ’\0’. 
-** If the allocation fails the function returns NULL.
-** Param. #1
-** The size of the string to be allocated.
-** Return value
-** The string allocated and initialized to 0.
-** Libc functions
-** malloc(3)
+** /*This function allocates memory and returns a 'fresh' string that ends with
+** '\0'. Each character in the string is set to '\0' if the allocation fails the
+** function returns NULL. To do this we simply use our ft_memalloc function with
+** the size parameter given to our function. We make sure cast
+** it as a char string
+** because that is what we want to return and we have to add + 1 to our size_t
+** to compensate for the terminating '\0'.
 */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+char		*ft_strnew(size_t size)
 {
-	char	*str;
-
-	str = ft_memalloc(size + 1);
-	if (str == NULL)
-		return (0);
-	else
-	{
-		ft_bzero(str, size + 1);
-		return (str);
-	}
+	return ((char *)ft_memalloc(size + 1));
 }

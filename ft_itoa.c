@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 /*
+** Convert integer to string!
 ** Allocate (with malloc(3)) and returns a “fresh” string end- ing with ’\0'
 ** representing the integer n given as argument. Negative numbers
 ** must be supported.

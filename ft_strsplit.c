@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** Allocates (with malloc(3)) and returns an array of “fresh” strings (all ending with ’\0’,
+** Allocates (with malloc(3)) and returns an array of “fresh” strings
+** (all ending with ’\0’,
 ** including the array itself) ob- tained by spliting s using
 ** the character c as a delimiter.
 ** If the allocation fails the function returns NULL. Example :

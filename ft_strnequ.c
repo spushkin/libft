@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 /*
-** Lexicographical comparison between s1 and s2 up to n char- acters or until a ’\0’ is reached. If the 2 strings are identical, the function returns 1, or 0 otherwise.
+** Lexicographical comparison between s1 and s2 up to n char- acters or
+** until a ’\0’ is reached.
+** If the 2 strings are identical, the function returns 1, or 0 otherwise.
 ** Param. #1
 ** The first string to be compared.
 ** Param. #2

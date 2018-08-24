@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 /*
-** Outputs the string s to the file descriptor fd.
+** This function is exactly the same as our ft_putstr function except that we
+** are requiring a file descriptor in the parameter along with the desired
+** string to be to be written.
 ** Param. #1 The string to output.
 ** Param. #2 The file descriptor.
 ** Return value None.
@@ -20,9 +22,16 @@
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s, int fd)
+void		ft_putstr_fd(char const *s, int fd)
 {
-	if (s)
-		while (*s)
-			ft_putchar_fd(*s++, fd);
+	write(fd, s, ft_strlen(s));
 }
+
+/*
+** int main ()
+** {
+** 	char string[10] = "letter";
+** 	ft_putstr_fd(string, 1);
+** 	return(0);
+** }
+*/

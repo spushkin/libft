@@ -11,22 +11,15 @@
 /* ************************************************************************** */
 
 /*
-** Takes as a parameter the address of a string that need to be freed with free(3), then sets its pointer to NULL.
-** Param. #1
-** The string’s address that needs to be freed and its pointer set to NULL.
-** Return value
-** None.
-** Libc functions
-** Free(3).
+** his function takes in the parameter of an address to a chain of characters
+** that should be freed and then set to NULL. We do this by running our
+** ft_memdel function and casting the pointer address as a void that we put
+** into its parameter.
 */
 
 #include "libft.h"
 
-void	ft_strdel(char **as)
+void		ft_strdel(char **as)
 {
-	if (as)
-	{
-		free(*as);
-		*as = NULL;
-	}
+	ft_memdel((void **)as);
 }

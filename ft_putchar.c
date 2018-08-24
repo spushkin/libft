@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 /*
-** Outputs the character c to the standard output.
+** This function that writes a single character to the standard
+** output stream of the terminal.
 ** Param. #1 The character to output.
-** Return value None.
-** Libc functions write(2).
+** The last parameter is the number of bytes to write.
 */
 
 #include "libft.h"
@@ -23,3 +23,12 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+/*
+**	int main ()
+**	{
+**	char let = 'A';
+**	ft_putchar(let);
+**	return(0);
+**	}
+*/

@@ -11,13 +11,13 @@
 /* ************************************************************************** */
 
 /*
-** Outputs the string s to the standard output followed by a ’\n’.
+** This function will display the string s on the standard output followed by a
+** '\n', which is a new line. We do this by using our ft_putstr and ft_putchar
+** functions that we previously made
 ** Param. #1 The string to output.
 ** Return value None.
 ** Libc functions write(2).
 */
-
-
 #include "libft.h"
 
 void	ft_putendl(char const *s)

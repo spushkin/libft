@@ -11,11 +11,10 @@
 /* ************************************************************************** */
 
 /*
-** Outputs the char c to the file descriptor fd.
-** Param. #1 The character to output.
-** Param. #2 The file descriptor.
-** Return value None.
-** Libc functions write(2).
+** This function writes the string s to the file descriptor fd followed by a
+** '\n' to make a new line. This function is exactly the same as our ft_putendl
+** function except that we take in a parameter for the file descriptor.
+** We will use our ft_putstr_fd and ft_putchar_fd functions
 */
 
 #include "libft.h"

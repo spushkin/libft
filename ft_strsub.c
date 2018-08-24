@@ -11,7 +11,11 @@
 /* ************************************************************************** */
 
 /*
-** Allocates (with malloc(3)) and returns a “fresh” substring from the string given as argument. The substring begins at indexstart and is of size len. If start and len aren’t refer- ing to a valid substring, the behavior is undefined. If the allocation fails, the function returns NULL.
+** Allocates (with malloc(3)) and returns a “fresh” substring from
+** the string given as argument. The substring begins at indexstart
+** and is of size len. If start and len aren’t refer- ing to a valid
+** substring, the behavior is undefined. If the allocation fails,
+** the function returns NULL.
 ** Param. #1
 ** The string from which create the substring.
 ** Param. #2

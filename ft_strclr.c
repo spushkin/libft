@@ -11,13 +11,10 @@
 /* ************************************************************************** */
 
 /*
-** Sets every character of the string to the value ’\0’.
-** Param. #1
-** The string that needs to be cleared.
-** Return value
-** None.
-** Libc functions
-** None.
+** This function assigns the value '\0' to all the characters in a chain that
+** we are changing the value of existing characters to '\0'
+** to clear the existing
+** string rather than putting '\0' to placehold in a newly allocated memory zone
 */
 
 #include "libft.h"

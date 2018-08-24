@@ -11,30 +11,22 @@
 /* ************************************************************************** */
 
 /*
-** Applies the function f to each character of the string passed as argument,
-** and passing its index as first argument. Each character is passed by address
-** to f to be modified if necessary.
-** Param. #1
-** The string to iterate.
-** Param. #2
-** The function to apply to each character of s and its index.
-** Return value
-** None.
-** Libc functions
-** None.
+** This function applies the parameter function f to each character of a string
+** also passed in it's parameter at at precisely that character's index string
+** position. Each character that is passed into the function f is modified if
+** necessary.
 */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void		ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
 	i = 0;
-	while (s && f && *s != '\0')
+	while (s[i] != '\0')
 	{
-		f(i, s);
-		s++;
+		f(i, s + i);
 		i++;
 	}
 }

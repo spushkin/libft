@@ -13,7 +13,8 @@
 /*
 ** Iterates a list lst and applies the function f to each link
 ** to create a “fresh” list (using malloc(3)) resulting from the
-** suc- cessive applications of f. If the allocation fails, the function returns NULL.
+** suc- cessive applications of f. If the allocation fails, the
+** function returns NULL.
 ** Param. #1
 ** A pointer’s to the first link of a list.
 ** Param. #2
