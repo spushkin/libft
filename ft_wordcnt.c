@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdel.c                                        :+:      :+:    :+:   */
+/*   ft_wordcnt.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spushkin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/22 16:47:46 by spushkin          #+#    #+#             */
-/*   Updated: 2018/08/22 16:47:51 by spushkin         ###   ########.fr       */
+/*   Created: 2018/08/24 15:11:53 by spushkin          #+#    #+#             */
+/*   Updated: 2018/08/24 15:12:19 by spushkin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** his function takes in the parameter of an address to a chain of characters
-** that should be freed and then set to NULL. We do this by running our
-** ft_memdel function and casting the pointer address as a void that we put
-** into its parameter.
-*/
-
 #include "libft.h"
 
-void	ft_strdel(char **as)
+int	ft_wordcnt(const char *t, char c)
 {
-	if (as)
+	int i;
+	int count;
+
+	i = 0;
+	count = 0;
+	while (t[i] != '\0')
 	{
-		free(*as);
-		*as = NULL;
+		while (t[i] == c)
+			i++;
+		if (t[i] != c)
+			count++;
+		while (t[i] != c && t[i])
+			i++;
 	}
+	return (count);
 }

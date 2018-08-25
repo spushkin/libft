@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdel.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spushkin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/22 16:47:46 by spushkin          #+#    #+#             */
-/*   Updated: 2018/08/22 16:47:51 by spushkin         ###   ########.fr       */
+/*   Created: 2018/08/24 13:48:57 by spushkin          #+#    #+#             */
+/*   Updated: 2018/08/24 13:49:17 by spushkin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** his function takes in the parameter of an address to a chain of characters
-** that should be freed and then set to NULL. We do this by running our
-** ft_memdel function and casting the pointer address as a void that we put
-** into its parameter.
-*/
-
 #include "libft.h"
 
-void	ft_strdel(char **as)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	if (as)
+	size_t p;
+
+	p = 0;
+	while (p < n)
 	{
-		free(*as);
-		*as = NULL;
+		((char*)dst)[p] = ((char*)src)[p];
+		if (((char*)dst)[p] == (char)c)
+			return (&dst[p + 1]);
+		p++;
 	}
+	return (0);
 }

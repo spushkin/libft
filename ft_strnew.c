@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 /*
-** /*This function allocates memory and returns a 'fresh' string that ends with
+** This function allocates memory and returns a 'fresh' string that ends with
 ** '\0'. Each character in the string is set to '\0' if the allocation fails the
 ** function returns NULL. To do this we simply use our ft_memalloc function with
 ** the size parameter given to our function. We make sure cast
