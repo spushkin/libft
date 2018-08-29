@@ -28,3 +28,14 @@ int			ft_strequ(char const *s1, char const *s2)
 		return (-1);
 	return (ft_strcmp(s1, s2) ? 0 : 1);
 }
+
+/*
+** int main()
+** {
+** 	char s1[10] = "String 2.";
+** 	char s2[10] = "String 2.";
+** 	int result = ft_strequ(s1, s2);
+** 	printf("The result is %d\n", result);
+** 	return 0;
+** }
+*/

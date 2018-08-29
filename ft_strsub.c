@@ -45,3 +45,13 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	str[len] = '\0';
 	return (str);
 }
+
+/*
+** int main()
+** {
+** 	char str[20] = "This is string.";
+** 	char *result = ft_strsub(str, 9, 2);
+** 	printf("The  result is %s\n", result);
+** 	return 0;
+** }
+*/

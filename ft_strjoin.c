@@ -44,3 +44,16 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
+
+/*
+** int main()
+** {
+** 	char s1[10] = "String 1.";
+** 	char s2[10] = "String 2.";
+** 	char *result = ft_strjoin(s1, s2);
+** 	printf("The result is %s\n", result);
+** 	printf("s1 doesn't change: %s\n", s1);
+** 	printf("s2 doesn't change: %s\n", s2);
+** 	return 0;
+** }
+*/

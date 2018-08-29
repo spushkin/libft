@@ -48,3 +48,14 @@ char	*ft_itoa(int nbr)
 	str[ft_strlen(str)] = '\0';
 	return (str);
 }
+
+/*
+** int main()
+** {
+** 	int nmb = 89;
+** 	char *val = ft_itoa(nmb);
+** 	printf("This is number %d\n", nmb);
+** 	printf("This is string %s\n", val);
+** 	return 0;
+** }
+*/

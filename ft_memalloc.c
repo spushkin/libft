@@ -22,6 +22,7 @@
 ** give it our size parameter. We then return our void variable mem.
 */
 
+#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memalloc(size_t size)
@@ -34,3 +35,12 @@ void	*ft_memalloc(size_t size)
 	ft_bzero(mem, size);
 	return (mem);
 }
+
+/*
+**	int main()
+**  {
+**	char *result = ft_memalloc(5);
+**	printf("The result is %s\n", result);
+**	return 0;
+**	}
+*/

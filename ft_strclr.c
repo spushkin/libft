@@ -24,3 +24,14 @@ void	ft_strclr(char *s)
 	while (s != '\0' && *s)
 		*s++ = '\0';
 }
+
+/*
+** int main()
+** {
+** 	char str[10] = "Hello.";
+** 	printf("The result is %s\n", str);
+** 	ft_strclr(str);
+** 	printf("The result is %s\n", str);
+** 	return 0;
+** }
+*/

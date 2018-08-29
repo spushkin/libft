@@ -28,3 +28,12 @@ void	ft_putendl(char const *s)
 		ft_putchar('\n');
 	}
 }
+
+/*
+** int main()
+** {
+** 	char str[20] = "Life is good.";
+** 	ft_putendl(str);
+** 	return (0);
+** }
+*/

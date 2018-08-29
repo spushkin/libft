@@ -27,3 +27,12 @@ void	ft_putendl_fd(char const *s, int fd)
 		ft_putchar_fd('\n', fd);
 	}
 }
+
+/*
+** int main ()
+** {
+**     char letter = 'A';
+**     ft_putchar_fd(letter, 2);
+**     return(0);
+** }
+*/

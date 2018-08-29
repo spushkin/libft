@@ -54,3 +54,14 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	new->next = NULL;
 	return (new);
 }
+
+/*
+** int main()
+** {
+** 	char content[20] = "CONTENT.";
+** 	t_list *result = ft_lstnew((void *)content, 16);
+** 	printf("The content is %s", (char *)result->content);
+** 	printf("The content size is %zu", result->content_size);
+** 	return 0;
+** }
+*/

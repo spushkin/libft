@@ -42,3 +42,12 @@ void		ft_putnbr(int n)
 	else
 		ft_putchar(n + '0');
 }
+
+/*
+** int main()
+** {
+** 	int nmb = 432;
+** 	ft_putnbr(nmb);
+** 	return (0);
+** }
+*/

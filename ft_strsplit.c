@@ -58,3 +58,15 @@ char	**ft_strsplit(char const *s, char c)
 	}
 	return (p);
 }
+
+/*
+** int main()
+** {
+** 	char str[20] = "This is string.";
+** 	char **result = ft_strsplit(str, 'r');
+** 	printf("The result is %s\n", *result);
+** 	printf("The result is %s\n", result[0]);
+** 	printf("The result is %s\n", result[1]);
+** 	return 0;
+** }
+*/

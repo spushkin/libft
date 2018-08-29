@@ -50,3 +50,13 @@ char	*ft_strtrim(char const *s)
 		return (str);
 	return (NULL);
 }
+
+/*
+** int main()
+** {
+** 	char s[30] = " \t\nThis is string. \tContinue.";
+** 	char *result = ft_strtrim(s);
+** 	printf("The result is %s\n", result);
+** 	return 0;
+** }
+*/

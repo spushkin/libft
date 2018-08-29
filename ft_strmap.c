@@ -37,3 +37,20 @@ char		*ft_strmap(char const *s, char (*f)(char))
 	str[i] = '\0';
 	return (str);
 }
+
+/*
+** char my_func(char str)
+** {
+** 	printf("My inner function %c\n", str);
+** 	return str;
+** }
+**
+** int main()
+** {
+** 	char str[10] = "Hello.";
+** 	printf("The result is %s\n", str);
+** 	ft_strmap(str, my_func);
+** 	printf("The result is %s\n", str);
+** 	return 0;
+** }
+*/

@@ -36,3 +36,14 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 		return (1);
 	return (0);
 }
+
+/*
+** int main()
+** {
+** 	char s1[20] = "String 22222.";
+** 	char s2[10] = "String 2.";
+** 	int result = ft_strnequ(s1, s2, 3);
+** 	printf("The result is %d\n", result);
+** 	return 0;
+** }
+*/
